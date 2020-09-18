@@ -8,9 +8,15 @@
     </ul>
 </app-toolbar>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Card'" [subTitle]="'Card Component'">
+<app-card [iconClasses]="'fi-info'" [title]="'Card'" [subTitle]="'Component'">
 
     <p footer>Footer Content</p>
     <p body>Body Content</p>
+
+</app-card>
+
+<app-card [iconClasses]="'fi-info'" [title]="'Accordion'" [subTitle]="'Component'">
+
+    <app-accordion body [accordionItems]="acccordionItems"></app-accordion>
 
 </app-card>
