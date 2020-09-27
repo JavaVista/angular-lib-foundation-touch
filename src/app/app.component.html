@@ -29,5 +29,11 @@
         <button footer (click)="progressValue = 75;" >Update</button>
 
     </app-card>
+
+    <app-card [iconClasses]="'fi-info'" [title]="'Star-Ratings'" [subTitle]="'Component'">
+        
+        <app-star-ratings body [rating]="2.75"></app-star-ratings>
+        <small footer>*Used batteries instead of stars because Foundation icons did not provided half stars</small>
+    </app-card>
     
 </main>
