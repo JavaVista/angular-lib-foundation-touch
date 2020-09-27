@@ -1,4 +1,6 @@
-# AngularLibrary
+# Angular Component Library
+
+## with a touch of Foundation Framework
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
