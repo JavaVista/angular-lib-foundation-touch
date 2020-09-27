@@ -6,13 +6,11 @@ import { AccordionItem } from './accordion-item';
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.scss']
 })
-export class AccordionComponent implements OnInit {
+export class AccordionComponent {
   @Input() accordionItems: AccordionItem[] = [];
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
 
   toggle(item: AccordionItem): void {
     item.isExpanded = !item.isExpanded;

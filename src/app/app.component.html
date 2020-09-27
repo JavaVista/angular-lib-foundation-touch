@@ -22,5 +22,12 @@
         <app-accordion body [accordionItems]="acccordionItems"></app-accordion>
     
     </app-card>
+
+    <app-card [iconClasses]="'fi-info'" [title]="'Progress'" [subTitle]="'Component'">
+
+        <app-progress-bar body [progressValue]="progressValue" ></app-progress-bar>
+        <button footer (click)="progressValue = 75;" >Update</button>
+
+    </app-card>
     
 </main>

@@ -21,4 +21,6 @@ export class AppComponent {
 
   ]
 
+  progressValue: number = 25;
+
 }
