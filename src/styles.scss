@@ -6,6 +6,10 @@
 
 @import '../src/assets/foundation-icons/foundation-icons.css';
 
+* {
+  scroll-behavior: smooth;
+}
+
 i {
     cursor: pointer;
     height: 32px;

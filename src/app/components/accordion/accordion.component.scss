@@ -17,6 +17,7 @@ $padding: 10px 20px;
             i {
                 color: $primary-color;
                 transition: all 0.3s;
+                font-size: 24px;
 
                 &.is-expanded {
                     transform: rotate(-180deg);

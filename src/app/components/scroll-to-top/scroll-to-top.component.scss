@@ -1,0 +1,31 @@
+@import "../../../assets/global";
+
+button {
+    position: fixed;
+    z-index: 2;
+    right: 3%;
+    bottom: 3%;
+    border-radius: 50%;
+    border: none;
+    background-color: $alert-color;
+    transition: all 0.3s;
+    height: 0;
+    width: 0;
+    visibility: hidden;
+    @include box-shadow();
+
+    &.is-shown {
+        height: 60px;
+        width: 60px;
+        visibility: visible;
+    }
+
+    i {
+        color: $light-gray;
+        font-size: 0;
+
+        &.is-shown {
+            font-size: 48px;
+        }
+    }
+}
