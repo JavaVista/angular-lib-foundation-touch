@@ -9,6 +9,10 @@ import { AccordionComponent } from './components/accordion/accordion.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
+import { DocumentationComponent } from './components/documentation/documentation.component';
+import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
+import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
+import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
     AccordionComponent,
     ProgressBarComponent,
     StarRatingsComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    DocumentationComponent,
+    PipeDocumentationComponent,
+    ServiceDocumentationComponent,
+    DirectiveDocumentationComponent
   ],
   imports: [
     BrowserModule,

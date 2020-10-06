@@ -1,47 +1,17 @@
 <app-toolbar [title]="'Angular Library with a touch of Foundation'">
     <ul>
-        <li>Components</li>
-        <li>Directives</li>
-        <li>Services</li>
-        <li>Pipes</li>
+        <li routerLink="">Components</li>
+        <li routerLink="Directives">Directives</li>
+        <li routerLink="Services">Services</li>
+        <li routerLink="Pipes">Pipes</li>
         <li>Guards</li>
     </ul>
 </app-toolbar>
 
 <main>
-    
-    <app-card [iconClasses]="'fi-info'" [title]="'Card'" [subTitle]="'Component'">
-    
-        <p footer>Footer Content</p>
-        <p body>Body Content</p>
-    
-    </app-card>
-    
-    <app-card [iconClasses]="'fi-info'" [title]="'Accordion'" [subTitle]="'Component'">
-    
-        <app-accordion body [accordionItems]="acccordionItems"></app-accordion>
-    
-    </app-card>
 
-    <app-card [iconClasses]="'fi-info'" [title]="'Progress'" [subTitle]="'Component'">
+    <router-outlet></router-outlet>
 
-        <app-progress-bar body [progressValue]="progressValue" ></app-progress-bar>
-        <button footer (click)="progressValue = 75;" >Update</button>
-
-    </app-card>
-
-    <app-card [iconClasses]="'fi-info'" [title]="'Star-Ratings'" [subTitle]="'Component'">
-        
-        <app-star-ratings body [rating]="2.75"></app-star-ratings>
-        <small footer>*Used batteries instead of stars because Foundation icons did not provided half stars</small>
-    </app-card>
-
-    <app-card [iconClasses]="'fi-info'" [title]="'Scroll to Top'" [subTitle]="'Component'">
-
-        <p body>Scroll about 400px down the page to render the scroll to the top of the page component</p>
-
-    </app-card>
-
-   <app-scroll-to-top></app-scroll-to-top>
-    
 </main>
+
+<app-scroll-to-top></app-scroll-to-top>
