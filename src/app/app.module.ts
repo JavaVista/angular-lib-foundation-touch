@@ -10,7 +10,6 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { StarRatingsComponent } from './components/star-ratings/star-ratings.component';
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
-import { PipeDocumentationComponent } from './pipes/pipe-documentation/pipe-documentation.component';
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 
@@ -24,7 +23,6 @@ import { DirectiveDocumentationComponent } from './directives/directive-document
     StarRatingsComponent,
     ScrollToTopComponent,
     DocumentationComponent,
-    PipeDocumentationComponent,
     ServiceDocumentationComponent,
     DirectiveDocumentationComponent
   ],
