@@ -1,1 +1,7 @@
-<p>pipe-documentation works!</p>
+<app-card [iconClasses]="'fi-wrench'" [title]="'Truncate'" [subTitle]="'Pipe'">
+
+    <p body>
+        {{ 'Gold Road bilge jib chandler fluke yawl Shiver me timbers lookout line rutters. Gaff gunwalls avast pink keel Sink me Nelsons folly lugsail brig Blimey. Blimey execution dock bring a spring upon her cable mizzen boom bilge Brethren of the Coast snow lass gallies. Yardarm sloop hail-shot jolly boat.' | truncate : 50 }}
+    </p>
+
+</app-card>
