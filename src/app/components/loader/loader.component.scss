@@ -1,0 +1,41 @@
+@import "../../../assets/global";
+
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(228, 241, 254, .6);
+    z-index: 2;
+    backdrop-filter: blur(3px);
+
+    .loader-container {
+        display: flex;
+        justify-content: center;
+
+        .loader {
+            position: absolute;
+            top: 35%;
+
+            .circular {
+                $border-props: 10px solid;
+                border: $border-props $medium-gray;
+                border-radius: 50%;
+                border-top: $border-props $primary-color;
+                width: 100px;
+                height: 100px;
+                animation: spin 1s linear infinite;
+
+                @keyframes spin {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+}

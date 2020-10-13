@@ -9,6 +9,7 @@ import { StarRatingsComponent } from './components/star-ratings/star-ratings.com
 import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.component';
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { SharedModule } from './shared/shared.module';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SharedModule } from './shared/shared.module';
     ProgressBarComponent,
     StarRatingsComponent,
     ScrollToTopComponent,
-    DocumentationComponent
+    DocumentationComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,

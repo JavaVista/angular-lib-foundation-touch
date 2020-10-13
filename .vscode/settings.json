@@ -2,6 +2,7 @@
     "conventionalCommits.scopes": [
         "app-component",
         "card.component",
-        "shared.module"
+        "shared.module",
+        "documentation.component"
     ]
 }
