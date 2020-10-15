@@ -5,3 +5,14 @@
     </p>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-wrench'" [title]="'Credit Card Formatter'" [subTitle]="'Pipe'">
+
+    <div body>
+        <p>{{ "4916548978551581" | creditcardfreeformatter }}</p>
+        <p>{{ "49165489785515814916548978551581" | creditcardfreeformatter}}</p>
+        <p>{{ "c491654897855158" | creditcardfreeformatter }}</p>
+        <p>{{ "449165489785515" | creditcardfreeformatter }}</p>
+    </div>
+
+</app-card>
