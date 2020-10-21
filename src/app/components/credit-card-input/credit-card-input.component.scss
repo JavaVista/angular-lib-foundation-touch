@@ -1,0 +1,38 @@
+.credit-card-input-container {
+    display: grid;
+    grid-gap: 10px;
+
+    .input-container {
+        position: relative;
+
+        input {
+            padding: 10px;
+            padding-left: 2.5em;
+        }
+
+        input[type="text"] {
+            width: 20%;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 1em;
+            transform: translate(-70%, -80%);
+            font-size: 25px;
+        }
+
+        #american-express {
+            color: #629f86;
+        }
+        #visa {
+            color: #1a1f71;
+        }
+        #mastercard {
+            color: #eb001b;
+        }
+        #discover {
+            color: #f9a021;
+        }
+    }
+}

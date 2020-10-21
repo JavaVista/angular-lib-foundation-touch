@@ -10,6 +10,8 @@ import { ScrollToTopComponent } from './components/scroll-to-top/scroll-to-top.c
 import { DocumentationComponent } from './components/documentation/documentation.component';
 import { SharedModule } from './shared/shared.module';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { LoaderComponent } from './components/loader/loader.component';
     StarRatingsComponent,
     ScrollToTopComponent,
     DocumentationComponent,
-    LoaderComponent
+    LoaderComponent,
+    CreditCardInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

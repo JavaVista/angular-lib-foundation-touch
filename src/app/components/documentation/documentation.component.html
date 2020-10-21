@@ -35,3 +35,21 @@
     <app-loader body [isLoading]="false"></app-loader>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-info'" [title]="'Credit Card Input'" [subTitle]="'Component'">
+
+<div body>
+
+    <!-- <p>{{ | creditcardfreeformatter }}</p>
+    <p>{{ "49165489785515814916548978551581" | creditcardfreeformatter}}</p>
+    <p>{{ "c491654897855158" | creditcardfreeformatter }}</p>
+    <p>{{ "449165489785515" | creditcardfreeformatter }}</p> -->
+    <app-credit-card-input [creditCardNumber]="'3916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+    <app-credit-card-input [creditCardNumber]="'4916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+    <app-credit-card-input [creditCardNumber]="'5916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+    <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+    <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="true"></app-credit-card-input>
+    
+</div>
+
+</app-card>
