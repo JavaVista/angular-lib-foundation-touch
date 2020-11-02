@@ -3,6 +3,7 @@
         "app-component",
         "card.component",
         "shared.module",
-        "documentation.component"
+        "documentation.component",
+        "README.md"
     ]
 }
