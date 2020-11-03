@@ -13,6 +13,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
 import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
     DocumentationComponent,
     LoaderComponent,
     CreditCardInputComponent,
-    TwitterPostComponent
+    TwitterPostComponent,
+    LinkedinPostComponent
   ],
   imports: [
     BrowserModule,
