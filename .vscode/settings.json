@@ -4,6 +4,7 @@
         "card.component",
         "shared.module",
         "documentation.component",
-        "README.md"
+        "README.md",
+        "pipe-documentation.component"
     ]
 }
