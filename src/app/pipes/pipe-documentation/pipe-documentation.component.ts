@@ -5,10 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './pipe-documentation.component.html',
   styleUrls: ['./pipe-documentation.component.scss']
 })
-export class PipeDocumentationComponent  {
+export class PipeDocumentationComponent { 
+  flattenData = [1, 2, [3], [4, [5, 6, [7]]]];
 
-  constructor() { }
+  modifyFlatten(): void {
+    this.flattenData.push(8, 9, 10);
+  }
 
-
+  reassignFlatten(): void {
+    this.flattenData = [...this.flattenData];
+  }
 
 }

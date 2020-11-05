@@ -16,3 +16,17 @@
     </div>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-wrench'" [title]="'Flatten Array'" [subTitle]="'Pipe'">
+
+    <div body>
+        {{ flattenData | flatten }}
+        
+    </div>
+
+    <div class="footer" footer>
+        <button class="button primary" (click)="modifyFlatten()" >Modify</button>
+        <button class="button secondary" (click)="reassignFlatten()" >Reassing</button>
+    </div>
+
+</app-card>
