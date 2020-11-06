@@ -20,7 +20,9 @@
 <app-card [iconClasses]="'fi-wrench'" [title]="'Flatten Array'" [subTitle]="'Pipe'">
 
     <div body>
-p        <h6 class="heading">Pipe Pure is set to "false"</h6>
+        <p>By "flattening" an array, we mean taking a multidimensional array and turning it into a regular "single"
+            dimensional array.</p>
+        <h6 class="heading">Pipe Pure is set to "false"</h6>
         <small>An impure pipe is called for every change detection cycle no matter whether the value or parameter(s)
             changes.</small>
         <p> {{ flattenData | flatten }} </p>
@@ -29,10 +31,14 @@ p        <h6 class="heading">Pipe Pure is set to "false"</h6>
             pipe.</small>
         <p> {{ flattenData }} </p>
 
-        <small>Note: If a property in this pipe "xxx | filter" is an array and an item gets added or removed, then a pure
-            pipe won't be called because Angular doesn't recognize xxx as changed because it's the same xxx (with a
+        <P>This is relevant for changes that are not detected by Angular. When you pass an array or object that got the
+            content changed (but is still the same instance)</P>
+
+        <small>Note: Pipe Pure is set to "true" by default. If a property in this pipe "xxx | filter" is an array and an item gets added or removed, then a
+            pure pipe won't be called because Angular doesn't recognize xxx as changed because it's the same xxx (with a
             different content though). If you make it pure: false then Angular doesn't care whether xxx has changed or
-            not its transform() method is called much more often every time a change detection is executed.</small>
+            not its transform() method is called much more often every time a change detection is executed. So impure
+            pipe executes everytime irrespective of source has changed or not. which leads to bad performance. </small>
     </div>
 
     <div footer>
