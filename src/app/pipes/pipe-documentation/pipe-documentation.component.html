@@ -20,13 +20,24 @@
 <app-card [iconClasses]="'fi-wrench'" [title]="'Flatten Array'" [subTitle]="'Pipe'">
 
     <div body>
-        {{ flattenData | flatten }}
-        
+p        <h6 class="heading">Pipe Pure is set to "false"</h6>
+        <small>An impure pipe is called for every change detection cycle no matter whether the value or parameter(s)
+            changes.</small>
+        <p> {{ flattenData | flatten }} </p>
+        <h6 class="heading">Pipe Pure is set to "true"</h6>
+        <small>A pure pipe is only called when Angular detects a change in the value or the parameters passed to a
+            pipe.</small>
+        <p> {{ flattenData }} </p>
+
+        <small>Note: If a property in this pipe "xxx | filter" is an array and an item gets added or removed, then a pure
+            pipe won't be called because Angular doesn't recognize xxx as changed because it's the same xxx (with a
+            different content though). If you make it pure: false then Angular doesn't care whether xxx has changed or
+            not its transform() method is called much more often every time a change detection is executed.</small>
     </div>
 
-    <div class="footer" footer>
-        <button class="button primary" (click)="modifyFlatten()" >Modify</button>
-        <button class="button secondary" (click)="reassignFlatten()" >Reassing</button>
+    <div footer>
+        <button class="button primary" (click)="modifyFlatten()">Modify</button>
+        <button class="button secondary" (click)="reassignFlatten()">Reassing</button>
     </div>
 
 </app-card>
