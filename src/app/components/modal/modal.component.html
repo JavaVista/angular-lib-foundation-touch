@@ -1,0 +1,13 @@
+<div class="modal-container" [class.is-hidden]="isHidden" >
+    <div class="modal-header">
+        <h5> {{ title }} </h5>
+        <i class="fi-x" (click)="closed()" ></i>
+    </div>
+
+    <div class="modal-body">
+        <ng-content ></ng-content>
+        
+    </div>
+</div>
+
+<div class="modal-overlay" [class.is-hidden]="isHidden" (click)="closed()" ></div>

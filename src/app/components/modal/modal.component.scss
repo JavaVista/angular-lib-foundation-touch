@@ -1,0 +1,45 @@
+@import "../../../assets/global";
+
+.modal-container {
+    z-index: 3;
+    display: grid;
+    gap: 10px; 
+    position: fixed;
+    min-width: 250px;
+    max-height: 100vh;
+    background-color: #fff;
+    @include box-shadow();
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    padding: 20px;
+    gap: 10px;
+    transition: display 0.3s;
+
+    .modal-header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    &.is-hidden {
+        display: none;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(228, 241, 254, 0.6);
+    opacity: 1;
+    z-index: 2;
+    transition: opacity 0.3s;
+
+    &.is-hidden {
+        z-index: -1;
+        opacity: 0;
+    }
+}

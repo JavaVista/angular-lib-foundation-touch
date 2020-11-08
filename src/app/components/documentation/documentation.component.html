@@ -60,3 +60,17 @@
     <app-linkedin-post body></app-linkedin-post>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-info'" [title]="'Modal Example'" [subTitle]="'Component'">
+
+    <div body>
+        <app-modal [title]="'Modal Example'" #modal>
+            <p>Here some content</p>
+        </app-modal>
+    </div>
+
+    <div footer>
+        <button class="button primary" (click)="modal.open()">Display Modal</button>
+    </div>
+
+</app-card>
