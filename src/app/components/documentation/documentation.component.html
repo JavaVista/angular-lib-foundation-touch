@@ -1,42 +1,44 @@
-<app-card [iconClasses]="'fi-info'" [title]="'Card'" [subTitle]="'Component'">
+<h1>Components</h1>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Card'" [subTitle]="'Component'">
     
     <p footer>Footer Content</p>
     <p body>Body Content</p>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Accordion'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Accordion'" [subTitle]="'Component'">
 
     <app-accordion body [accordionItems]="acccordionItems"></app-accordion>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Progress'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Progress'" [subTitle]="'Component'">
 
     <app-progress-bar body [progressValue]="progressValue" ></app-progress-bar>
     <button footer class="button primary" (click)="progressValue = 75;" >Update</button>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Star-Ratings'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Star-Ratings'" [subTitle]="'Component'">
     
     <app-star-ratings body [rating]="2.75"></app-star-ratings>
     <small footer>*Used batteries instead of stars because Foundation icons did not provided half stars</small>
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Scroll to Top'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Scroll to Top'" [subTitle]="'Component'">
 
     <p body>Scroll about 400px down the page to render the scroll to the top of the page component</p>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Loader'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Loader'" [subTitle]="'Component'">
 
     <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Credit Card Input'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Credit Card Input'" [subTitle]="'Component'">
 
 <div body>
     <app-credit-card-input [creditCardNumber]="'3916548978551581'" [isReadOnly]="false"></app-credit-card-input>
@@ -49,19 +51,19 @@
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Twitter Post'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Twitter Post'" [subTitle]="'Component'">
 
     <app-twitter-post body></app-twitter-post>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'LinkedIn Post'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'LinkedIn Post'" [subTitle]="'Component'">
 
     <app-linkedin-post body></app-linkedin-post>
 
 </app-card>
 
-<app-card [iconClasses]="'fi-info'" [title]="'Modal Example'" [subTitle]="'Component'">
+<app-card [iconClasses]="'fi-background-color'" [title]="'Modal Example'" [subTitle]="'Component'">
 
     <div body>
         <app-modal [title]="'Modal Example'" #modal>
