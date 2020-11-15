@@ -49,3 +49,9 @@
     </div>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-wrench'" [title]="'Filter'" [subTitle]="'Pipe'">
+    <div body>
+        {{ ['Hola', 'Mundo', 'Hola Mundo', 'Hello', 'World', 'Hello World'] | filter : 'hola' }}
+    </div>
+</app-card>
