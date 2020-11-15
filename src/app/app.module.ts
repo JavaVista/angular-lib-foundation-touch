@@ -16,6 +16,7 @@ import { TwitterPostComponent } from './components/twitter-post/twitter-post.com
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { QuoteComponent } from './components/quote/quote.component';
+import { ToggleComponent } from './components/toggle/toggle.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { QuoteComponent } from './components/quote/quote.component';
     TwitterPostComponent,
     LinkedinPostComponent,
     ModalComponent,
-    QuoteComponent
+    QuoteComponent,
+    ToggleComponent
   ],
   imports: [
     BrowserModule,

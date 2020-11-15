@@ -24,6 +24,7 @@ export class DocumentationComponent  {
 
   progressValue: number = 25;
   loaderType: LoaderType = LoaderType.Loading;
+  toggleValue: boolean = false;
 
 
 }
