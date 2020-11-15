@@ -17,6 +17,7 @@ import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.
 import { ModalComponent } from './components/modal/modal.component';
 import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
+import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ToggleComponent } from './components/toggle/toggle.component';
     LinkedinPostComponent,
     ModalComponent,
     QuoteComponent,
-    ToggleComponent
+    ToggleComponent,
+    RichTextViewerComponent
   ],
   imports: [
     BrowserModule,

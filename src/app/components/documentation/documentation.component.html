@@ -93,3 +93,28 @@
  <app-toggle [isOn]="toggleValue" body></app-toggle>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Rich Text Viewer'" [subTitle]="'Component'">
+
+<div body>
+    <div>
+        <h4>HTML validator</h4>
+    </div>
+    <div class="bottom-margin">
+        <h5>Good Example</h5>
+        <small>Paragraph with valid HTML tags</small>
+        <app-rich-text-viewer [htmlText]="'<p>Hola Mundo</p>'"></app-rich-text-viewer>
+    </div>
+    <div class="bottom-margin">
+        <h5>Empty Example</h5>
+        <small>Paragraph with no tags and empty content. Does not render.</small>
+        <app-rich-text-viewer [htmlText]="'     '"></app-rich-text-viewer>
+    </div>
+    <div class="bottom-margin">
+        <h5>Bad HTML Example</h5>
+        <small>Paragraph with an invalid HTML tag. Does not render.</small>
+        <app-rich-text-viewer [htmlText]="'<p>Hola Mundo'"></app-rich-text-viewer>
+    </div>
+</div>
+
+</app-card>
