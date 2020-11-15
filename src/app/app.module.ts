@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
 import { LinkedinPostComponent } from './components/linkedin-post/linkedin-post.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { QuoteComponent } from './components/quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ModalComponent } from './components/modal/modal.component';
     CreditCardInputComponent,
     TwitterPostComponent,
     LinkedinPostComponent,
-    ModalComponent
+    ModalComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,

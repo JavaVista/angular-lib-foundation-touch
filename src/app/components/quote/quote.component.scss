@@ -1,0 +1,36 @@
+@import "../../../assets/global";
+
+blockquote {
+    padding: 20px;
+    display: grid;
+    color: #fff;
+    background-color: $light-gray;
+    grid-template-columns: auto 1fr;
+    border-left: 10px solid $success-color;
+
+    i {
+        font-size: 50px;
+        top: -25px;
+        position: relative;
+    }
+
+    .quote {
+        margin-left: 2%;
+    }
+
+    footer {
+        grid-column: 1/3;
+        justify-self: end;
+        text-align: right;
+
+        .author {
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 0px;
+        }
+
+        .occupation {
+            font-style: italic;
+        }
+    }
+}
