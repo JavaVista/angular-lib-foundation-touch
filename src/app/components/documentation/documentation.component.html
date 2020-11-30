@@ -1,7 +1,7 @@
 <h1>Components</h1>
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Card'" [subTitle]="'Component'">
-    
+
     <p footer>Footer Content</p>
     <p body>Body Content</p>
 
@@ -15,13 +15,13 @@
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Progress'" [subTitle]="'Component'">
 
-    <app-progress-bar body [progressValue]="progressValue" ></app-progress-bar>
-    <button footer class="button primary" (click)="progressValue = 75;" >Update</button>
+    <app-progress-bar body [progressValue]="progressValue"></app-progress-bar>
+    <button footer class="button primary" (click)="progressValue = 75;">Update</button>
 
 </app-card>
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Star-Ratings'" [subTitle]="'Component'">
-    
+
     <app-star-ratings body [rating]="2.75"></app-star-ratings>
     <small footer>*Used batteries instead of stars because Foundation icons did not provided half stars</small>
 </app-card>
@@ -40,14 +40,14 @@
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Credit Card Input'" [subTitle]="'Component'">
 
-<div body>
-    <app-credit-card-input [creditCardNumber]="'3916548978551581'" [isReadOnly]="false"></app-credit-card-input>
-    <app-credit-card-input [creditCardNumber]="'4916548978551581'" [isReadOnly]="false"></app-credit-card-input>
-    <app-credit-card-input [creditCardNumber]="'5916548978551581'" [isReadOnly]="false"></app-credit-card-input>
-    <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="false"></app-credit-card-input>
-    <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="true"></app-credit-card-input>
-    
-</div>
+    <div body>
+        <app-credit-card-input [creditCardNumber]="'3916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+        <app-credit-card-input [creditCardNumber]="'4916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+        <app-credit-card-input [creditCardNumber]="'5916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+        <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="false"></app-credit-card-input>
+        <app-credit-card-input [creditCardNumber]="'6916548978551581'" [isReadOnly]="true"></app-credit-card-input>
+
+    </div>
 
 </app-card>
 
@@ -80,41 +80,45 @@
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Quote'" [subTitle]="'Component'">
 
-    <app-quote body 
-    [quote]="'Focus on the journey not the destination. Joy is found not in finishing an activity but in doing it'"
-    [author]="'Greg Anderson'"
-    [occupation]="'Wellness Author & Speaker'"
-    ></app-quote>
+    <app-quote body
+        [quote]="'Focus on the journey not the destination. Joy is found not in finishing an activity but in doing it'"
+        [author]="'Greg Anderson'" [occupation]="'Wellness Author & Speaker'"></app-quote>
 
 </app-card>
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Toggle'" [subTitle]="'Component'">
 
- <app-toggle [isOn]="toggleValue" body></app-toggle>
+    <app-toggle [isOn]="toggleValue" body></app-toggle>
 
 </app-card>
 
 <app-card [iconClasses]="'fi-background-color'" [title]="'Rich Text Viewer'" [subTitle]="'Component'">
 
-<div body>
-    <div>
-        <h4>HTML validator</h4>
+    <div body>
+        <div>
+            <h4>HTML validator</h4>
+        </div>
+        <div class="bottom-margin">
+            <h5>Good Example</h5>
+            <small>Paragraph with valid HTML tags</small>
+            <app-rich-text-viewer [htmlText]="'<p>Hola Mundo</p>'"></app-rich-text-viewer>
+        </div>
+        <div class="bottom-margin">
+            <h5>Empty Example</h5>
+            <small>Paragraph with no tags and empty content. Does not render.</small>
+            <app-rich-text-viewer [htmlText]="'     '"></app-rich-text-viewer>
+        </div>
+        <div class="bottom-margin">
+            <h5>Bad HTML Example</h5>
+            <small>Paragraph with an invalid HTML tag. Does not render.</small>
+            <app-rich-text-viewer [htmlText]="'<p>Hola Mundo'"></app-rich-text-viewer>
+        </div>
     </div>
-    <div class="bottom-margin">
-        <h5>Good Example</h5>
-        <small>Paragraph with valid HTML tags</small>
-        <app-rich-text-viewer [htmlText]="'<p>Hola Mundo</p>'"></app-rich-text-viewer>
-    </div>
-    <div class="bottom-margin">
-        <h5>Empty Example</h5>
-        <small>Paragraph with no tags and empty content. Does not render.</small>
-        <app-rich-text-viewer [htmlText]="'     '"></app-rich-text-viewer>
-    </div>
-    <div class="bottom-margin">
-        <h5>Bad HTML Example</h5>
-        <small>Paragraph with an invalid HTML tag. Does not render.</small>
-        <app-rich-text-viewer [htmlText]="'<p>Hola Mundo'"></app-rich-text-viewer>
-    </div>
-</div>
+
+</app-card>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Debounce Search'" [subTitle]="'Component'">
+
+   <app-debounce-search body (searchUpdate)="debounceExample($event)" ></app-debounce-search>
 
 </app-card>

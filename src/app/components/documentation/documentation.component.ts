@@ -7,7 +7,7 @@ import { LoaderType } from '../loader/models/loader-type.enum';
   templateUrl: './documentation.component.html',
   styleUrls: ['./documentation.component.scss']
 })
-export class DocumentationComponent  {
+export class DocumentationComponent {
   acccordionItems: AccordionItem[] = [
     {
       title: 'Example Uno',
@@ -26,5 +26,7 @@ export class DocumentationComponent  {
   loaderType: LoaderType = LoaderType.Loading;
   toggleValue: boolean = false;
 
-
+  debounceExample(value: string): void {
+    console.log('Component Documentation', value);
+  }
 }
