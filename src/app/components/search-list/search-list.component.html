@@ -1,0 +1,11 @@
+<p>This search field will display a filtered list based on your character letter input. When you click on
+    the listed item
+    on the list it will populate the input field. This component is using the "Filter Pipe" and the "Debounce Search
+    component"</p>
+<app-debounce-search [searchTerm]="searchTerm" (searchUpdate)="updateSearchTerm($event)"></app-debounce-search>
+
+<ul *ngIf="searchTerm && !hasBeenSelected">
+    <div class="items-container">
+        <li *ngFor="let item of items | filter : searchTerm" (click)="selectSearchTerm(item)">{{ item }}</li>
+    </div>
+</ul>

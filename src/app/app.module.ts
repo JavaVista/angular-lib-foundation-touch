@@ -19,6 +19,7 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { ToggleComponent } from './components/toggle/toggle.component';
 import { RichTextViewerComponent } from './components/rich-text-viewer/rich-text-viewer.component';
 import { DebounceSearchComponent } from './components/debounce-search/debounce-search.component';
+import { SearchListComponent } from './components/search-list/search-list.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DebounceSearchComponent } from './components/debounce-search/debounce-s
     QuoteComponent,
     ToggleComponent,
     RichTextViewerComponent,
-    DebounceSearchComponent
+    DebounceSearchComponent,
+    SearchListComponent
   ],
   imports: [
     BrowserModule,

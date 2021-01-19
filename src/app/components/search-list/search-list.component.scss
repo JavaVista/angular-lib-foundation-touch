@@ -1,0 +1,24 @@
+@import "../../../assets/global";
+
+ul {
+    position: relative;
+
+    .items-container {
+        @include box-shadow();
+        width: 10%;
+        position: absolute;
+        background-color: #fff;
+
+        li {
+            list-style: none;
+            transition: all 0.3s;
+            cursor: pointer;
+            padding: 3px;
+
+            &:hover {
+                background-color: $primary-color;
+                color: #fff;
+            }
+        }
+    }
+}

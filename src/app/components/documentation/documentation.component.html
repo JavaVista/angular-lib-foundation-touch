@@ -122,3 +122,9 @@
    <app-debounce-search body (searchUpdate)="debounceExample($event)" ></app-debounce-search>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Search List'" [subTitle]="'Component'">
+
+   <app-search-list body [items]="['Puerto Rico', 'New York', 'Connecticut']"></app-search-list>
+
+</app-card>
