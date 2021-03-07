@@ -1,0 +1,11 @@
+<div class="counter-container grid-x">
+    <button class="cell small-4 medium-4 large-4 decrement" (click)="decrement()">
+        <i class="fi-minus"></i>
+    </button>
+
+    <input class="cell small-4 medium-4 large-4" type="number" [(ngModel)]="counter" [min]="min" [max]="max">
+
+    <button class="cell small-4 medium-4 large-4 increment" (click)="increment()">
+        <i class="fi-plus"></i>
+    </button>
+</div>
