@@ -8,7 +8,7 @@ import { LoaderType } from '../loader/models/loader-type.enum';
   styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent {
-  acccordionItems: AccordionItem[] = [
+  accordionItems: AccordionItem[] = [
     {
       title: 'Example Uno',
       content: 'Example Content Uno',
