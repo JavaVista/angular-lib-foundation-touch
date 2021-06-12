@@ -22,6 +22,7 @@ import { DebounceSearchComponent } from './components/debounce-search/debounce-s
 import { SearchListComponent } from './components/search-list/search-list.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
+import { PagingComponent } from './components/paging/paging.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { SimpleTableComponent } from './components/simple-table/simple-table.com
     DebounceSearchComponent,
     SearchListComponent,
     CounterComponent,
-    SimpleTableComponent
+    SimpleTableComponent,
+    PagingComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,15 @@
+<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    <li>
+        <button (click)="setPage(currentPage - step)" [disabled]="isPreviousDisabled">
+            <i class="fi-arrow-left"></i>
+        </button>
+    </li>
+<li *ngFor="let page of pages">
+<button (click)="setPage(page)" [class.current-page]="currentPage === page">{{ page }}</button>
+</li>
+    <li>
+        <button (click)="setPage(currentPage + step)" [disabled]="isNextDisabled">
+            <i class="fi-arrow-right"></i>
+        </button>
+    </li>
+</ul>
