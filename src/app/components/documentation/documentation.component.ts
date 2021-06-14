@@ -26,6 +26,13 @@ export class DocumentationComponent {
   loaderType: LoaderType = LoaderType.Loading;
   toggleValue: boolean = false;
 
+  tabs: { title: string, active: boolean }[] = [
+    { title: 'First Tab', active: true },
+    { title: 'Second Tab', active: false },
+    { title: 'Third Tab', active: false }
+  ];
+  selectedTab: number = 0;
+
   debounceExample(value: string): void {
     console.log('Component Documentation', value);
   }

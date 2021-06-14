@@ -1,0 +1,19 @@
+@import "../../../assets/global";
+
+.tabs {
+    margin-bottom: 10px;
+    border: none;
+    
+    .tab {
+        cursor: pointer;
+        margin-right: 10px;
+        padding: 2px;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+    
+        &.active {
+            border-bottom: 2px solid $primary-color;
+            transition: all 0.3s;
+        }
+}
+}

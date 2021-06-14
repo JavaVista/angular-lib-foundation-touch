@@ -23,6 +23,7 @@ import { SearchListComponent } from './components/search-list/search-list.compon
 import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
 import { PagingComponent } from './components/paging/paging.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { PagingComponent } from './components/paging/paging.component';
     SearchListComponent,
     CounterComponent,
     SimpleTableComponent,
-    PagingComponent
+    PagingComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
