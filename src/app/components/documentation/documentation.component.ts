@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item';
 import { LoaderType } from '../loader/models/loader-type.enum';
+import { PillType } from '../pill/enum/pill-type.enum';
 
 @Component({
   selector: 'app-documentation',
@@ -8,6 +9,8 @@ import { LoaderType } from '../loader/models/loader-type.enum';
   styleUrls: ['./documentation.component.scss']
 })
 export class DocumentationComponent {
+  PillType = PillType;
+
   accordionItems: AccordionItem[] = [
     {
       title: 'Example Uno',

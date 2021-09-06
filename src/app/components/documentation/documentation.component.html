@@ -160,3 +160,14 @@
     </app-tabs>
 
 </app-card>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Pill'" [subTitle]="'Component'">
+
+   <div body>
+     <app-pill [type]="PillType.Alert" [iconClasses]="'fi-price-tag'" [label]="'Error'"></app-pill>
+     <app-pill [type]="PillType.Info" [iconClasses]="'fi-price-tag'" [label]="'Info'"></app-pill>
+     <app-pill [type]="PillType.Success" [iconClasses]="'fi-price-tag'" [label]="'Success'"></app-pill>
+     <app-pill [type]="PillType.Warning" [label]="'Warning'"></app-pill>
+   </div>
+
+</app-card>

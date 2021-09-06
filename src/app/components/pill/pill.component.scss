@@ -1,0 +1,21 @@
+@import "../../../assets/global";
+
+.label {
+    padding: 5px 15px;
+    border-radius: 16px;
+    margin: 5px;
+    cursor: pointer;
+
+    &.success {
+        background-color: $success-color;
+    }
+    &.info {
+        background-color: $primary-color;
+    }
+    &.alert {
+        background-color: $alert-color;
+    }
+    &.warning {
+        background-color: $warning-color;
+    }
+}

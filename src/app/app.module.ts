@@ -24,6 +24,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { SimpleTableComponent } from './components/simple-table/simple-table.component';
 import { PagingComponent } from './components/paging/paging.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { PillComponent } from './components/pill/pill.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TabsComponent } from './components/tabs/tabs.component';
     CounterComponent,
     SimpleTableComponent,
     PagingComponent,
-    TabsComponent
+    TabsComponent,
+    PillComponent
   ],
   imports: [
     BrowserModule,
