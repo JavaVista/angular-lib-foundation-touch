@@ -1,4 +1,6 @@
-<div [ngClass]="['label', type]">
+<div [ngClass]="['label', type]" (click)="toggle()">
+    <i *ngIf="isActive && canBeSelected" class="fi-x-circle"></i>
+
     <i *ngIf="iconClasses" [ngClass]="iconClasses"></i>
     <span> {{label}} </span>
 </div>

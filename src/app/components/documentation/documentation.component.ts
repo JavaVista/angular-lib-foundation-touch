@@ -10,6 +10,7 @@ import { PillType } from '../pill/enum/pill-type.enum';
 })
 export class DocumentationComponent {
   PillType = PillType;
+  pills: string[];
 
   accordionItems: AccordionItem[] = [
     {
@@ -38,5 +39,19 @@ export class DocumentationComponent {
 
   debounceExample(value: string): void {
     console.log('Component Documentation', value);
+  }
+
+  constructor() {
+    this.pills = [
+      'Cyber security',
+      'Networking',
+      'Computers',
+      'Diagnostics',
+      'Medical',
+      'Navigation',
+      'Communication',
+      'Security',
+      'Engines'
+    ]
   }
 }

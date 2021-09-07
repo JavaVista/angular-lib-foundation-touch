@@ -25,6 +25,7 @@ import { SimpleTableComponent } from './components/simple-table/simple-table.com
 import { PagingComponent } from './components/paging/paging.component';
 import { TabsComponent } from './components/tabs/tabs.component';
 import { PillComponent } from './components/pill/pill.component';
+import { PillFilterComponent } from './components/pill-filter/pill-filter.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { PillComponent } from './components/pill/pill.component';
     SimpleTableComponent,
     PagingComponent,
     TabsComponent,
-    PillComponent
+    PillComponent,
+    PillFilterComponent
   ],
   imports: [
     BrowserModule,

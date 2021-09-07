@@ -161,7 +161,8 @@
 
 </app-card>
 
-<app-card [iconClasses]="'fi-background-color'" [title]="'Pill'" [subTitle]="'Component'">
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Pill Filter'" [subTitle]="'Component'">
 
    <div body>
      <app-pill [type]="PillType.Alert" [iconClasses]="'fi-price-tag'" [label]="'Error'"></app-pill>
@@ -170,4 +171,12 @@
      <app-pill [type]="PillType.Warning" [label]="'Warning'"></app-pill>
    </div>
 
+</app-card>
+
+<app-card [iconClasses]="'fi-background-color'" [title]="'Pill'" [subTitle]="'Component'">
+
+    <div body>
+      <app-pill-filter [pills]="pills"></app-pill-filter>
+    </div>
+ 
 </app-card>
